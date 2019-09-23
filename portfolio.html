@@ -3,21 +3,28 @@
 <head>
     <meta charset="utf-8">
     <title>Amrit's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
             background-image: linear-gradient(to bottom right, #b3b3b3, #737373);
         }
+
         .main {
             box-sizing: border-box;
-            display: grid;
+            /*display: grid;*/
             width: content-box;
-            grid-template-columns: 1fr 1fr 1fr;
+            /*grid-template-columns: 1fr 1fr 1fr;*/
+            display: flex;
             padding: 0.2%;
-            gap: 0.1%;
             border-style: solid;
-            border-radius: 2%;
+            border-radius: 10pt;
+        }
+
+        .bio, .summary, .project {
+            flex: 1;
+            padding-right: 4%;
+            padding-left: 4%;
         }
 
         div.bio {
@@ -27,6 +34,7 @@
 
         .profile-image {
             border-radius: 50%;
+            margin-top: 8%;
         }
 
         .heading-summary {
@@ -45,22 +53,32 @@
         .project-summary {
             text-align: center;
             font-size: 1vw;
+
         }
 
-        .one, .two {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-            width: 50%;
-            height: 50%;
-            border-radius: 6%;
+        .image-one {
+            text-align: center;
         }
 
-        @media screen and (max-width: 768px) {
+        .project2{
+            text-align: center;
+        }
+
+        /*.one, .two {*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            /*margin-top: auto;*/
+            /*margin-bottom: auto;*/
+            /*width: 50%;*/
+            /*height: 50%;*/
+            /*border-radius: 6%;*/
+        /*}*/
+
+        @media screen and (max-width: 828px) {
             .main {
-                grid-template-columns: none;
+                display: block;
             }
+
         }
 
 
