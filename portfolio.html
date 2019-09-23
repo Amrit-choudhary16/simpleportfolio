@@ -42,6 +42,16 @@
             font-size: 1vw;
         }
 
+        .one, .two {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 50%;
+            height: 50%;
+            border-radius: 6%;
+        }
+
     </style>
 
 </head>
@@ -115,35 +125,40 @@
         <div class="top-project">
             <h3 class="heading-summary">Projects</h3>
         </div>
-        <div class ="project1">
+        <div class="project1">
             <h4 class="project-summary">Online Photo Library</h4>
-            <div class="one"><img src="img/screen1.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen2.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen3.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen4.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen5.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen6.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen7.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen8.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen9.jpg"  style="width: 50%" height="550"></div>
-            <div class="one"><img src="img/screen10.jpg"  style="width: 50%" height="550"></div>
+            <div class="image-one">
+                <div class="one"><img src="img/screen1.jpg"></div>
+                <div class="one"><img src="img/screen2.jpg"></div>
+                <div class="one"><img src="img/screen3.jpg"></div>
+                <div class="one"><img src="img/screen4.jpg"></div>
+                <div class="one"><img src="img/screen5.jpg"></div>
+                <div class="one"><img src="img/screen6.jpg"></div>
+                <div class="one"><img src="img/screen7.jpg"></div>
+                <div class="one"><img src="img/screen8.jpg"></div>
+                <div class="one"><img src="img/screen9.jpg"></div>
+                <div class="one"><img src="img/screen10.jpg"></div>
+            </div>
 
             <p><b>Description:</b>online photo library is an application for android devices that stores images.
-                The users are to register, and all the data is stored on firebase. The images can be assigned with a tag during upload.
-                Images from gallery can be searched based on tags. The catchy part of the project is the dark mode theme.
+                The users are to register, and all the data is stored on firebase. The images can be assigned with a tag
+                during upload.
+                Images from gallery can be searched based on tags. The catchy part of the project is the dark mode
+                theme.
                 Under settings, on switching to dark mode, the dark theme gets initiated.</p>
         </div>
-        <div class ="project2">
+        <div class="project2">
             <h4 class="project-summary">Students Registration Website</h4>
-            <div class="two"><img src="img/welcome1.png"  style="width: 70%" height="350"></div>
-            <div class="two"><img src="img/welcome2.png"  style="width: 70%" height="350"></div>
-            <div class="two"><img src="img/welcome3.png"  style="width: 70%" height="350"></div>
-            <div class="two"><img src="img/welcome4.png"  style="width: 70%" height="350"></div>
-            <div class="two"><img src="img/welcome5.png"  style="width: 70%" height="350"></div>
-            <div class="two"><img src="img/welcome6.png"  style="width: 70%" height="350"></div>
-            <div class="two"><img src="img/welcome7.png "  style="width: 70%" height="350"></div>
+            <div class="two"><img src="img/welcome1.png"></div>
+            <div class="two"><img src="img/welcome2.png"></div>
+            <div class="two"><img src="img/welcome3.png"></div>
+            <div class="two"><img src="img/welcome4.png"></div>
+            <div class="two"><img src="img/welcome5.png"></div>
+            <div class="two"><img src="img/welcome6.png"></div>
+            <div class="two"><img src="img/welcome7.png"></div>
             <p><b>Description:</b>Implemented the schemas for student details.
-                Created a web page using servlets which supported insert, modify and delete section to manipulate details as needed.</p>
+                Created a web page using servlets which supported insert, modify and delete section to manipulate
+                details as needed.</p>
         </div>
     </div>
 </div>
@@ -151,9 +166,10 @@
 <script>
 
     var slideIndex = 0;
-    var slideIndex1=0;
+    var slideIndex1 = 0;
     showSlides();
     showSlides1();
+
     function showSlides() {
         var i;
         var slides = document.getElementsByClassName("one");
@@ -162,9 +178,11 @@
             slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
 
-        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex - 1].style.display = "block";
 
         setTimeout(showSlides, 2000);
     }
@@ -177,9 +195,11 @@
             slides1[i].style.display = "none";
         }
         slideIndex1++;
-        if (slideIndex1 > slides1.length) {slideIndex1 = 1}
+        if (slideIndex1 > slides1.length) {
+            slideIndex1 = 1
+        }
 
-        slides1[slideIndex1-1].style.display = "block";
+        slides1[slideIndex1 - 1].style.display = "block";
 
         setTimeout(showSlides1, 2000);
     }
