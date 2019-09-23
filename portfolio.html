@@ -1,18 +1,23 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Amrit's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-
+        body {
+            background-image: linear-gradient(to bottom right, #b3b3b3, #737373);
+        }
         .main {
             box-sizing: border-box;
             display: grid;
             width: content-box;
             grid-template-columns: 1fr 1fr 1fr;
+            padding: 0.2%;
+            gap: 0.1%;
+            border-style: solid;
+            border-radius: 2%;
         }
 
         div.bio {
@@ -51,6 +56,13 @@
             height: 50%;
             border-radius: 6%;
         }
+
+        @media screen and (max-width: 768px) {
+            .main {
+                grid-template-columns: none;
+            }
+        }
+
 
     </style>
 
