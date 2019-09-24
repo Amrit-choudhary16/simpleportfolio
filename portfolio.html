@@ -10,19 +10,43 @@
         a {
             text-decoration: none;
             padding-bottom: 3px;
-            border-bottom: 1px solid blue;}
+            border-bottom: 1px solid #f2f0f0;
+            color: aqua;
+        }
 
-        h2.name, h3.status{
+        .link {
+            padding: 5%;
+        }
+
+        h2.name, h3.status {
             font-family: 'Open Sans', sans-serif;
             color: #555;
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: -.1vw;
             line-height: 1;
-            text-shadow: #EDEDED .2vw .1vw 0;
+            text-shadow: #b5b3b3 0.2vw 0.1vw 0;
         }
+
         body {
-            background-image: linear-gradient(to bottom right,  #ff7e5f    , #feb47b);
+            margin: 0;
+            width: 100%;
+            color: #fff;
+            background: linear-gradient(-45deg, #d3cdcb, #68052b, #0a465c, #1f5a07);
+            background-size: 400% 400%;
+            animation: anime 10s ease infinite;
+        }
+
+        @keyframes anime {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .main {
@@ -55,7 +79,7 @@
             background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0));
             text-align: center;
             font-size: 2vw;
-            font:  180% 'Arial Narrow', sans-serif;
+            font: 180% 'Arial Narrow', sans-serif;
             color: #001f3f;
             text-transform: uppercase;
             letter-spacing: -.1vw;
@@ -69,7 +93,8 @@
             width: 50%;
             border-radius: 6%;
         }
-        .award-image:hover{
+
+        .award-image:hover {
             -webkit-transform: scale(1.2);
             -ms-transform: scale(1.2);
             transform: scale(1.2);
@@ -81,30 +106,22 @@
 
         }
 
-        .image-one {
+        .image-one, .image-two {
             text-align: center;
         }
 
-        .project2{
-            text-align: center;
-        }
-        .link{
+        .project2 {
             text-align: center;
         }
 
-        /*.one, .two {*/
-            /*margin-left: auto;*/
-            /*margin-right: auto;*/
-            /*margin-top: auto;*/
-            /*margin-bottom: auto;*/
-            /*width: 50%;*/
-            /*height: 50%;*/
-            /*border-radius: 6%;*/
-        /*}*/
+        .link {
+            text-align: center;
+        }
 
-        @media screen and (max-width: 828px) {
+        @media screen and (max-width: 768px) {
             .main {
                 display: block;
+                border: none;
             }
 
         }
@@ -125,11 +142,9 @@
             <h2 class="name"> Amrit Choudhary</h2>
             <h3 class="status"> Mastering Computers</h3>
             <br>
-            <a href="mailto: ac74426n@pace.com">Email</a>
-            <br>
-            <a href="https://www.linkedin.com/in/amrit-choudhary-a54b72116">LinkedIn</a>
-            <br>
-            <a href="https://github.com/Amrit-choudhary16">GitHub</a>
+            <a class="link" href="mailto: ac74426n@pace.com">Email</a>
+            <a class="link" href="https://www.linkedin.com/in/amrit-choudhary-a54b72116">LinkedIn</a>
+            <a class="link" href="https://github.com/Amrit-choudhary16">GitHub</a>
         </div>
     </div>
 
@@ -200,7 +215,7 @@
             <div class="link">
                 <a href="https://www.youtube.com/watch?v=BbMmpm-aBZU&feature=youtu.be">YouTube</a>
             </div>
-                <p><b><u>Description:</u></b> Online photo library is an application for android devices that stores images.
+            <p><b><u>Description:</u></b> Online photo library is an application for android devices that stores images.
                 The users are to register, and all the data is stored on firebase. The images can be assigned with a tag
                 during upload.
                 Images from gallery can be searched based on tags. The catchy part of the project is the dark mode
@@ -210,13 +225,15 @@
         <br><br>
         <div class="project2">
             <h4 class="project-summary"><u>Students Registration Website</u></h4>
-            <div class="two"><img src="img/welcome1.png"></div>
-            <div class="two"><img src="img/welcome2.png"></div>
-            <div class="two"><img src="img/welcome3.png"></div>
-            <div class="two"><img src="img/welcome4.png"></div>
-            <div class="two"><img src="img/welcome5.png"></div>
-            <div class="two"><img src="img/welcome6.png"></div>
-            <div class="two"><img src="img/welcome7.png"></div>
+            <div class="image-two">
+                <div class="two"><img src="img/welcome1.png"></div>
+                <div class="two"><img src="img/welcome2.png"></div>
+                <div class="two"><img src="img/welcome3.png"></div>
+                <div class="two"><img src="img/welcome4.png"></div>
+                <div class="two"><img src="img/welcome5.png"></div>
+                <div class="two"><img src="img/welcome6.png"></div>
+                <div class="two"><img src="img/welcome7.png"></div>
+            </div>
             <p><b><u>Description:</u></b> I implemented the schemas for student details.
                 Created a web page using servlets which supported insert, modify and delete section to manipulate
                 details as needed.</p>
