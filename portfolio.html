@@ -6,19 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+
+        a {
+            text-decoration: none;
+            padding-bottom: 3px;
+            border-bottom: 1px solid blue;}
+
+        h2.name, h3.status{
+            font-family: 'Open Sans', sans-serif;
+            color: #555;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: -.1vw;
+            line-height: 1;
+            text-shadow: #EDEDED .2vw .1vw 0;
+        }
         body {
-            background-image: linear-gradient(to bottom right, #b3b3b3, #737373);
+            background-image: linear-gradient(to bottom right,  #ff7e5f    , #feb47b);
         }
 
         .main {
             box-sizing: border-box;
-            /*display: grid;*/
+            display: grid;
             width: content-box;
-            /*grid-template-columns: 1fr 1fr 1fr;*/
-            display: flex;
-            padding: 0.2%;
-            border-style: solid;
-            border-radius: 10pt;
+            grid-template-columns: 1fr 1fr 1fr;
+            border: .1vw solid #4C3C1B;
+            padding: 1vw;
         }
 
         .bio, .summary, .project {
@@ -33,21 +46,33 @@
         }
 
         .profile-image {
+            width: 50%;
             border-radius: 50%;
             margin-top: 8%;
         }
 
         .heading-summary {
+            background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0));
             text-align: center;
             font-size: 2vw;
+            font:  180% 'Arial Narrow', sans-serif;
+            color: #001f3f;
+            text-transform: uppercase;
+            letter-spacing: -.1vw;
         }
 
         .award-image {
+            padding-top: 10%;
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
             border-radius: 6%;
+        }
+        .award-image:hover{
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
         }
 
         .project-summary {
@@ -61,6 +86,9 @@
         }
 
         .project2{
+            text-align: center;
+        }
+        .link{
             text-align: center;
         }
 
@@ -96,6 +124,7 @@
             <br>
             <h2 class="name"> Amrit Choudhary</h2>
             <h3 class="status"> Mastering Computers</h3>
+            <br>
             <a href="mailto: ac74426n@pace.com">Email</a>
             <br>
             <a href="https://www.linkedin.com/in/amrit-choudhary-a54b72116">LinkedIn</a>
@@ -147,7 +176,6 @@
 
         </div>
         <div class="bottom-summary">
-            <br><br>
             <img class="award-image" src="img/award1.jpg">
         </div>
     </div>
@@ -156,7 +184,7 @@
             <h3 class="heading-summary">Projects</h3>
         </div>
         <div class="project1">
-            <h4 class="project-summary">Online Photo Library</h4>
+            <h4 class="project-summary"><u>Online Photo Library.</u></h4>
             <div class="image-one">
                 <div class="one"><img src="img/screen1.jpg"></div>
                 <div class="one"><img src="img/screen2.jpg"></div>
@@ -169,16 +197,19 @@
                 <div class="one"><img src="img/screen9.jpg"></div>
                 <div class="one"><img src="img/screen10.jpg"></div>
             </div>
-
-            <p><b>Description:</b>online photo library is an application for android devices that stores images.
+            <div class="link">
+                <a href="https://www.youtube.com/watch?v=BbMmpm-aBZU&feature=youtu.be">YouTube</a>
+            </div>
+                <p><b><u>Description:</u></b> Online photo library is an application for android devices that stores images.
                 The users are to register, and all the data is stored on firebase. The images can be assigned with a tag
                 during upload.
                 Images from gallery can be searched based on tags. The catchy part of the project is the dark mode
                 theme.
                 Under settings, on switching to dark mode, the dark theme gets initiated.</p>
         </div>
+        <br><br>
         <div class="project2">
-            <h4 class="project-summary">Students Registration Website</h4>
+            <h4 class="project-summary"><u>Students Registration Website</u></h4>
             <div class="two"><img src="img/welcome1.png"></div>
             <div class="two"><img src="img/welcome2.png"></div>
             <div class="two"><img src="img/welcome3.png"></div>
@@ -186,7 +217,7 @@
             <div class="two"><img src="img/welcome5.png"></div>
             <div class="two"><img src="img/welcome6.png"></div>
             <div class="two"><img src="img/welcome7.png"></div>
-            <p><b>Description:</b>Implemented the schemas for student details.
+            <p><b><u>Description:</u></b> I implemented the schemas for student details.
                 Created a web page using servlets which supported insert, modify and delete section to manipulate
                 details as needed.</p>
         </div>
